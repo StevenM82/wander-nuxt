@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <article class="article">
-      <img class="img-fluid" src="../assets/glacial-lake.jpg" alt="a calm glacial lake">
+      <img class="img-fluid" src="assets/images/glacial-lake.jpg" alt="a calm glacial lake">
       <p class="lead">We are a couple of travelers that have taken the time and put in the work to allow us see the world.
         On our first adventure we traveled by plane, by bus and by bus (different sort) over the course of a year and a
         half. Our next adventure brings home a little closer to us while we get farther from it.
@@ -19,7 +19,7 @@
     </article>
   </section>
 
-  <section class="sidebar">
+  <!-- <section class="sidebar">
     <article>
       <img class="img-fluid" src="../assets/The-beginning.jpg"
         alt="a large white van parked in front of a house">
@@ -38,11 +38,17 @@
       <p class="sidebar-p">After seeing it, I'm floored</p>
       <a class="sidebar-a" href="#">Read more >></a>
     </article>
-  </section>
+  </section> -->
 </template>
 
 <script>
+  import LeftSidebarComponent from components/LeftSidebarComponent.vue
+
   export default {
-    name: 'Home'
+    name: 'Home',
+
+    components: {
+      LeftSidebarComponent
+    }
   }
 </script>

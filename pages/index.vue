@@ -6,7 +6,6 @@
         alt="A view looking out toward the water from a tree filled and rocky island">
       <div class="flex-heading">
 
-
         <!-- named slot for the header goes here -->
         <header-component>
 
@@ -18,23 +17,22 @@
         </header-component>
       </div>
 
-
-    <nav class="nav">
-      <ul class="nav-list">
-        <!-- <nuxt-link> is used for internal navigation on the webpage. <a> still gets used for external links -->
-        <li><nuxt-link to="/">The Beginning</nuxt-link></li>
-        <li><nuxt-link to="/images">Images</nuxt-link></li>
-        <li><nuxt-link to="/boot-grid">Boot-grid</nuxt-link></li>
-        <li><nuxt-link to="/accordian">Accordian</nuxt-link></li>
-        <li>
-            <span data-toggle="tooltip" title="Not working yet">
-                <a class="nav-link disabled" href="#">More and more</a>
-            </span>
-        </li>
-      </ul>
-    </nav>
+      <nav class="nav">
+        <ul class="nav-list">
+          <!-- <nuxt-link> is used for internal navigation on the webpage. <a> still gets used for external links -->
+          <li><nuxt-link to="/">The Beginning</nuxt-link></li>
+          <li><nuxt-link to="/images">Images</nuxt-link></li>
+          <li><nuxt-link to="/boot-grid">Boot-grid</nuxt-link></li>
+          <li><nuxt-link to="/accordian">Accordian</nuxt-link></li>
+          <li>
+              <span data-toggle="tooltip" title="Not working yet">
+                  <a class="nav-link disabled" href="#">More and more</a>
+              </span>
+          </li>
+        </ul>
+      </nav>
     </main>
-    <nuxt-view/>
+    <!-- <nuxt-view/> -->
     <footer class="footer">
       <ul class="footer-nav">
         <li><nuxt-link to="/">The Beginning</nuxt-link></li>
@@ -47,12 +45,12 @@
 </template>
 
 <script>
-  import HeaderComponent from 'components/HeaderComponent.vue'
+  // import HeaderComponent from 'components/HeaderComponent.vue'
 
   export default {
-    name: 'app',
+    name: 'index',
     components: {
-      HeaderComponent,
+      // HeaderComponent,
     }
   }
 </script>
