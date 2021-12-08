@@ -13,7 +13,7 @@ gap: 2rem;
 
   //Set a header grid that only covers one row of the page grid container, but
   //spans the entire width of the page
-  .main {
+  .header {
     display: grid;
     grid-area: 1 / 1 / 2 / span 12;
   }

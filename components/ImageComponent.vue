@@ -1,48 +1,38 @@
 <template>
-    <div>
-        <li>
-            <img class="img-fluid" @click="toggleBorder()" 
-                :class="isActive ? 'img-border' : 'no-border'"  
-                :src="image.url"> 
-                {{ image.url }} 
-        </li>
-    </div>
+    <!-- the ternary statement applies the border when 'isShowing' returns true.
+    the state is changed using 'toggleBorder()' -->
+    <img @click="toggleBorder()" :class="isShowing ? 'img-border' : 'no-border'"> 
 </template>
 
 <script>
+import { toggleMixin } from 'mixins/ToggleMixin.js'
+
 export default {
     name: 'ImageComponent',
-
-    props: {
-        name: {
-            type: String,
-            required: true,
-        },
-        url: {
-            type: String,
-            required: true,
-        },
-        alt: {
-            type: String,
-            required: false,
+    mixins: [toggleMixin],
+    data () {
+        return {
+            props: {
+                name: {
+                    type: String,
+                    required: true,
+                },
+                url: {
+                    type: String,
+                    required: true,
+                },
+                alt: {
+                    type: String,
+                    required: true,
+                }
+            }
         }
-    },
-
-    //creating the toggle mixin here
-    // data () {
-    //     return {
-    //         isActive: false
-    //     }
-    // },
-    // methods: {
-    //     toggleBorder() {
-    //         this.isActive = !isActive
-    //     }
-    // },
+    }
 }
 </script>
 
 <style lang="scss">
+//styling 'no-border' keeps the image from resizing when the black border is applied/removed
     .img-border {
         border: 2px solid black;
     }

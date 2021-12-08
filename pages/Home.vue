@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <article class="article">
-      <img class="img-fluid" src="assets/images/glacial-lake.jpg" alt="a calm glacial lake">
+      <img class="img-fluid" src="static/images/glacial-lake.jpg" alt="a calm glacial lake">
       <p class="lead">We are a couple of travelers that have taken the time and put in the work to allow us see the world.
         On our first adventure we traveled by plane, by bus and by bus (different sort) over the course of a year and a
         half. Our next adventure brings home a little closer to us while we get farther from it.
@@ -42,13 +42,13 @@
 </template>
 
 <script>
-  import LeftSidebarComponent from components/LeftSidebarComponent.vue
+  // import LeftSidebarComponent from 'components/LeftSidebarComponent.vue'
 
   export default {
     name: 'Home',
 
     components: {
-      LeftSidebarComponent
+      // LeftSidebarComponent
     }
   }
 </script>
