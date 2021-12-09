@@ -29,6 +29,7 @@
 <script>
 export default {
     name: 'Accordian',
+    layout: 'default',
     data() {
       return {
         //set the default value to true to make the initial state of the dropdown box collapsed

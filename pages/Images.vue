@@ -21,6 +21,7 @@
 
     export default {
         name: 'Images',
+        layout: 'default',
         components: {
             ImageComponent,
         },

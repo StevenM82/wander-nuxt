@@ -1,78 +1,54 @@
 <template>
-<!-- set the header, nav and footer in this template for the entire website -->
-  <div class="grid-container">
-    <header class="header">
-      <img class="header-img" src="static/images/lopez-island.jpg"
-        alt="A view looking out toward the water from a tree filled and rocky island">
-      <div class="flex-heading">
-        <header-component>
-          <h1>Wanderlust a la Carte</h1>
-          <h2>Not lost, but finding</h2>
-        </header-component>
-      </div>
-
-    <nav class="nav">
-      <ul class="nav-list">
-        <!-- <nuxt-link> acts like an <a> with the correct href -->
-        <li><nuxt-link to="/">The Beginning</nuxt-link></li>
-        <li><nuxt-link to="/images">Images</nuxt-link></li>
-        <li><nuxt-link to="/boot-grid">Boot-grid</nuxt-link></li>
-        <li><nuxt-link to="/accordian">Accordian</nuxt-link></li>
-        <li>
-            <span data-toggle="tooltip" title="Not working yet">
-                <a class="nav-link disabled" href="#">More and more</a>
-            </span>
-        </li>
-      </ul>
-    </nav>
-    </header>
-    <router-view/>
-
-    <footer class="footer">
-      <ul class="footer-nav">
-        <li><a href="#">The Beginning</a></li>
-        <li><a href="#">So far, so good</a></li>
-        <li><a href="#">Mistakes and Advice</a></li>
-      </ul>
-    </footer>
-  </div>
+  <section class="section">
+    <article class="article">
+      <img class="img-fluid" src="static/images/glacial-lake.jpg" alt="a calm glacial lake">
+      <p class="lead">We are a couple of travelers that have taken the time and put in the work to allow us see the world.
+        On our first adventure we traveled by plane, by bus and by bus (different sort) over the course of a year and a
+        half. Our next adventure brings home a little closer to us while we get farther from it.
+      </p>
+    </article>
+    <article class="article">
+      <p>A more thorough explanation of things will continue here. Always more to be written along the way</p>
+    </article>
+    <article class="article">
+      <p>More information given if people make it this far down the page.</p>
+    </article>
+    <article class="article">
+      <p>Here we are at the beginning. Things never go as you would hope, but along the way you find things you
+        never could have hoped for.</p>
+    </article>
+  </section>
+  
+  <!-- <section class="left-sidebar">
+    <article>
+      <img class="img-fluid" src="../assets/The-beginning.jpg"
+        alt="a large white van parked in front of a house">
+      <p class="sidebar-p">How things all began! Isn't she lovely?</p>
+      <a class="sidebar-a" href="#">Read more >></a>
+    </article>
+    <article>
+      <img class="img-fluid" src="../assets/windowless-sliding-door.jpg"
+        alt="A van sliding door with a large section cut out for a window">
+      <p class="sidebar-p">You can see right through the door...</p>
+      <a class="sidebar-a" href="#">Read more >></a>
+    </article>
+    <article>
+      <img class="img-fluid" src="../assets/floored.jpg"
+        alt="a guy standing next to a cargo van stock wooden floor">
+      <p class="sidebar-p">After seeing it, I'm floored</p>
+      <a class="sidebar-a" href="#">Read more >></a>
+    </article>
+  </section> -->
 </template>
 
 <script>
-  // import axios from 'axios'
-  import HeaderComponent from '@/components/HeaderComponent.vue'
+  // import SidebarComponent from 'components/SidebarComponent.vue'
 
   export default {
-    name: 'app',
+    name: 'Home',
+    layout: 'default',
     components: {
-      HeaderComponent,
-    },
-  
-  // data() {
-  //   return {
-  //     loading: true,
-  //     countries: null,
-  //     errored: false
-  //   }
-  // },
-  // mounted () {
-  // axios
-  //   .get('https://restcountries.eu/rest/v2/region/americas')
-  //   .then(response => (this.countries = response.data))
-  //   .catch(error => {
-  //     console.log(error)
-  //     this.errored = true
-  //   })
-  //   .finally(() => this.loading = false)
-  // }
-}
+      // SidebarComponent
+    }
+  }
 </script>
-
-<style lang="scss">
-// import all of the scss partials globally into the website
-@import 'assets/scss/normalize';
-@import 'assets/scss/settings.variables';
-@import 'assets/scss/settings.responsive';
-@import 'assets/scss/grid.font.mixins';
-@import 'assets/scss/components.content';
-</style>

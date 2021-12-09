@@ -28,7 +28,8 @@
 
 <script>
   export default {
-    name: 'Boot-grid'
+    name: 'Boot-grid',
+    layout: 'default',
   }
 </script>
 
