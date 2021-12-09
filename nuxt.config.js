@@ -12,16 +12,27 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', type: 'text/css', href: 'http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' },
+      { rel: 'stylesheet', href: 'css/style.css' }
+    ],
+    script: [
+      { src: "https://code.jquery.com/jquery-3.5.1.slim.min.js", integrity: "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj", crossorigin: "anonymous" },
+      { src: "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js", integrity: "sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx", crossorigin: "anonymous" }
+    ],
   },
-
+  
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    // CSS file in the project
+    '~/assets/scss/style.css',
+    // SCSS file in the project
+    '~/assets/scss/style.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
+  plugins: [ 
+    '~/plugins/bootstrap.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -33,7 +44,22 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    'bootstrap-vue/nuxt'
   ],
+
+  module: {
+    rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+    ],
+  },
+
+  bootstrapVue: {
+    bootstrapCSS: false,
+    icons: true,
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

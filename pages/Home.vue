@@ -19,7 +19,7 @@
     </article>
   </section>
 
-  <!-- <section class="sidebar">
+  <!-- <section class="left-sidebar">
     <article>
       <img class="img-fluid" src="../assets/The-beginning.jpg"
         alt="a large white van parked in front of a house">
@@ -42,13 +42,13 @@
 </template>
 
 <script>
-  // import LeftSidebarComponent from 'components/LeftSidebarComponent.vue'
+  // import SidebarComponent from 'components/SidebarComponent.vue'
 
   export default {
     name: 'Home',
 
     components: {
-      // LeftSidebarComponent
+      // SidebarComponent
     }
   }
 </script>

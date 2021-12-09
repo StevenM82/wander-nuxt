@@ -13,3 +13,8 @@
     padding-right: 2rem;
 }
 
+@mixin sidebar {
+    @include grid-main;
+    grid-row-start: 2;
+    row-gap: 2rem;
+}

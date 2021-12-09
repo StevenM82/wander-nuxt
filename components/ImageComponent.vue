@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { toggleMixin } from 'mixins/ToggleMixin.js'
+import { toggleMixin } from '@/mixins/ToggleMixin.js'
 
 export default {
     name: 'ImageComponent',

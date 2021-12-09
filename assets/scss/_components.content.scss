@@ -157,11 +157,9 @@ li:nth-child(10) {
   box-shadow: 0 0 10px black;
 }
 //create a small grid to go alongside the body
-.sidebar {
-  @include grid-main;
-  grid-row-start: 2;
+.left-sidebar {
+  @include sidebar;
   grid-column: 2 / 3;
-  row-gap: 2rem;
 
   //make the sidebar disappear when the screen gets too small
   @include media-query("mobile") {

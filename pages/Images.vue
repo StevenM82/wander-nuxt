@@ -29,16 +29,16 @@
             // otherwise it will just show the url and not load the image
             return {
                 images: [
-                    {name: 'camping', url: require('@/assets/camping-wings-veggies.jpg'), alt: 'chicken wings and skewered veggies over a bbq grate'},
-                    {name: 'market', url: require('@/assets/the-market.jpg')},
-                    {name: 'forest', url: require('@/assets/tropical-forest.jpg')},
-                    {name: 'glacial', url: require('@/assets/glacial-lake.jpg')},
-                    {name: 'festival', url: require('@/assets/festival-2019.jpg')},
-                    {name: 'muertos', url: require('@/assets/los-muertos.jpg')},
-                    {name: 'interior', url: require('@/assets/original-interior.jpg')},
-                    {name: 'interior2', url: require('@/assets/original-interior-2.jpg')},
-                    {name: 'floor', url: require('@/assets/floor-removed.jpg')},
-                    {name: 'sliding-door', url: require('@/assets/sliding-door-prep.jpg')},
+                    {name: 'camping', url: require('static/images/camping-wings-veggies.jpg'), alt: 'chicken wings and skewered veggies over a bbq grate'},
+                    {name: 'market', url: require('static/images/the-market.jpg')},
+                    {name: 'forest', url: require('static/images/tropical-forest.jpg')},
+                    {name: 'glacial', url: require('static/images/glacial-lake.jpg')},
+                    {name: 'festival', url: require('static/images/festival-2019.jpg')},
+                    {name: 'muertos', url: require('static/images/los-muertos.jpg')},
+                    {name: 'interior', url: require('static/images/original-interior.jpg')},
+                    {name: 'interior2', url: require('static/images/original-interior-2.jpg')},
+                    {name: 'floor', url: require('static/images/floor-removed.jpg')},
+                    {name: 'sliding-door', url: require('static/images/sliding-door-prep.jpg')},
                 ],
             }
         }
