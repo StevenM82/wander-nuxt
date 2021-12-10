@@ -7,48 +7,36 @@
         half. Our next adventure brings home a little closer to us while we get farther from it.
       </p>
     </article>
-    <article class="article">
-      <p>A more thorough explanation of things will continue here. Always more to be written along the way</p>
-    </article>
-    <article class="article">
-      <p>More information given if people make it this far down the page.</p>
-    </article>
-    <article class="article">
-      <p>Here we are at the beginning. Things never go as you would hope, but along the way you find things you
-        never could have hoped for.</p>
+    <article class="article"
+      v-for="article in articles"
+      :key="article.id"
+      >
+      <p>
+        {{article.text}}
+      </p>
     </article>
   </section>
-  
-  <!-- <section class="left-sidebar">
-    <article>
-      <img class="img-fluid" src="../assets/The-beginning.jpg"
-        alt="a large white van parked in front of a house">
-      <p class="sidebar-p">How things all began! Isn't she lovely?</p>
-      <a class="sidebar-a" href="#">Read more >></a>
-    </article>
-    <article>
-      <img class="img-fluid" src="../assets/windowless-sliding-door.jpg"
-        alt="A van sliding door with a large section cut out for a window">
-      <p class="sidebar-p">You can see right through the door...</p>
-      <a class="sidebar-a" href="#">Read more >></a>
-    </article>
-    <article>
-      <img class="img-fluid" src="../assets/floored.jpg"
-        alt="a guy standing next to a cargo van stock wooden floor">
-      <p class="sidebar-p">After seeing it, I'm floored</p>
-      <a class="sidebar-a" href="#">Read more >></a>
-    </article>
-  </section> -->
 </template>
 
 <script>
-  // import SidebarComponent from 'components/SidebarComponent.vue'
+  // import SidebarComponent from '@/components/SidebarComponent.vue'
+  import IndexComponent from '@/components/IndexComponent.vue'
 
   export default {
     name: 'Home',
     layout: 'default',
     components: {
+      IndexComponent,
       // SidebarComponent
+    },
+    data() {
+      return {
+        articles: [
+          {id: '1', text: 'A more thorough explanation of things will continue here. Always more to be written along the way'},
+          {id: '2', text: 'More information given if people make it this far down the page.'},
+          {id: '3', text: 'Here we are at the beginning. Things never go as you would hope, but along the way you find things you never could have hoped for.'}
+        ]
+      }
     }
   }
 </script>

@@ -10,7 +10,7 @@ import { toggleMixin } from '@/mixins/ToggleMixin.js'
 export default {
     name: 'ImageComponent',
     mixins: [toggleMixin],
-    data () {
+    data() {
         return {
             props: {
                 name: {
