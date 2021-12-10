@@ -11,9 +11,9 @@
       v-for="article in articles"
       :key="article.id"
       >
-      <p>
+      <index-component>
         {{article.text}}
-      </p>
+      </index-component>
     </article>
   </section>
 </template>

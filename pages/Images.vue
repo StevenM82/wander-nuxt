@@ -17,13 +17,11 @@
 </template>
 
 <script>
-    import ImageComponent from '@/components/ImageComponent.vue'
 
     export default {
         name: 'Images',
         layout: 'default',
         components: {
-            ImageComponent,
         },
         data() {
             // you have to place the image url inside require() to get it to show from the array 
