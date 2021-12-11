@@ -1,5 +1,4 @@
 <template>
-    <div>
         <section class="left-sidebar">
             <article>
                 <img class="img-fluid" :src="require('static/images/The-beginning.jpg')" 
@@ -20,7 +19,6 @@
                 <a class="sidebar-a" href="#">Read more >></a>
             </article>
         </section>
-    </div>
 </template>
 
 <script>

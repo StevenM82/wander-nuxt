@@ -11,23 +11,23 @@
       v-for="article in articles"
       :key="article.id"
       >
-      <index-component>
+      <p>
         {{article.text}}
-      </index-component>
+      </p>
     </article>
   </section>
 </template>
 
 <script>
-  // import SidebarComponent from '@/components/SidebarComponent.vue'
   import IndexComponent from '@/components/IndexComponent.vue'
+  import SidebarComponent from '@/components/SidebarComponent.vue'
 
   export default {
     name: 'Home',
     layout: 'default',
     components: {
       IndexComponent,
-      // SidebarComponent
+      SidebarComponent
     },
     data() {
       return {

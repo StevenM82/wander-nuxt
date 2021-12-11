@@ -15,6 +15,6 @@
 
 @mixin sidebar {
     @include grid-main;
-    grid-row-start: 2;
-    row-gap: 2rem;
+    grid-row-start: 1;
+    row-gap: 0;
 }
