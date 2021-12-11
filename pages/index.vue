@@ -1,4 +1,5 @@
 <template>
+<div class="main-body">
   <section class="section">
     <article class="article">
       <img class="img-fluid" :src="require('static/images/glacial-lake.jpg')" alt="a calm glacial lake">
@@ -16,6 +17,7 @@
       </p>
     </article>
   </section>
+  </div>
 </template>
 
 <script>
@@ -34,7 +36,9 @@
         articles: [
           {id: '1', text: 'A more thorough explanation of things will continue here. Always more to be written along the way'},
           {id: '2', text: 'More information given if people make it this far down the page.'},
-          {id: '3', text: 'Here we are at the beginning. Things never go as you would hope, but along the way you find things you never could have hoped for.'}
+          {id: '3', text: 'Here we are at the beginning. Things never go as you would hope, but along the way you find things you never could have hoped for.'},
+          {id: '3', text: 'Things never go as you would hope, but along the way you find things you never could have hoped for.'},
+
         ]
       }
     }

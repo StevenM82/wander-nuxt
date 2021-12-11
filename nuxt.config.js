@@ -12,7 +12,6 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: 'text/css', href: 'http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' },
       { rel: 'stylesheet', href: 'css/style.css' }
     ],
@@ -25,7 +24,7 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     // CSS file in the project
-    // '~/assets/scss/style.css',
+    '~/assets/scss/style.css',
     // SCSS file in the project
     '~/assets/scss/style.scss'
   ],
