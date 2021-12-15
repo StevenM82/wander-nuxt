@@ -83,18 +83,25 @@ gap: 2rem;
 .main-body {
   @include grid-main;
   grid-area: 2 / 2 / 10 / 12;
+  column-gap: 2rem;
 }
 
 //Set the section element to be the outer grid container for the body of the page
 //This is used on the index.html page only
+.section-accordion {
+  @include grid-main;
+  gap: 1rem;
+  grid-area: 2 / 3 / 10 / 12;
+}  
+
 .section {
   @include grid-main;
   gap: 1rem;
-  grid-area: 2 / 2 / 10 / 12;
+  grid-area: 1 / 2 / 10 / 8;
 
   //make the articles appear more centered on smaller screens
   @include media-query("mobile") {
-    grid-area: 2 / 2 / 10 / 12;
+    grid-area: 2 / 1 / 10 / 2;
   }
 
   //allow the grid to place the as many articles that span 3 columns on one row as

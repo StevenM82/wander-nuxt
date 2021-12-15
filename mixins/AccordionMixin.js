@@ -1,11 +1,11 @@
-export const accordianMixin = {
+export const accordionMixin = {
     data() {
         return {
             isCollapsed: false
         }
     },
     methods: {
-        accordianCollapse() {
+        accordionCollapse() {
             this.isCollapsed = !this.isCollapsed
         }
     }

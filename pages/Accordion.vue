@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section class="section-accordion">
       <div id="accordion">
         <div 
           class="card mb-1"
@@ -28,7 +28,7 @@
 
 <script>
 export default {
-    name: 'Accordian',
+    name: 'Accordion',
     layout: 'default',
     data() {
       return {

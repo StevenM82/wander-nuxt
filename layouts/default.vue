@@ -40,7 +40,7 @@
 </template>
 
 <script>
-  // import axios from 'axios'
+  import axios from 'axios'
   import HeaderComponent from '~/components/HeaderComponent.vue'
 
   export default {
@@ -49,24 +49,25 @@
       HeaderComponent,
     },
   
-  // data() {
-  //   return {
-  //     loading: true,
-  //     countries: null,
-  //     errored: false
-  //   }
-  // },
-  // mounted () {
-  // axios
-  //   .get('https://restcountries.eu/rest/v2/region/americas')
-  //   .then(response => (this.countries = response.data))
-  //   .catch(error => {
-  //     console.log(error)
-  //     this.errored = true
-  //   })
-  //   .finally(() => this.loading = false)
-  // }
-}
+    data() {
+      return {
+        loading: true,
+        //figure out the variable that will be used with the API
+        weather: null, 
+        errored: false
+      }
+    },
+    mounted () {
+    axios
+      .get('https://api.weather.gov')
+      .then(response => (this.weather = response.data))
+      .catch(error => {
+        console.log(error)
+        this.errored = true
+      })
+      .finally(() => this.loading = false)
+    }
+  }
 </script>
 
 <style lang="scss">
