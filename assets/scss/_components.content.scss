@@ -19,7 +19,7 @@ gap: 2rem;
   }
   .header-img {
     grid-area: 1 / 1 / span 12 / span 12;
-    height: 75vh;
+    height: 50vh;
     width: 100%;
   }
   //Set the flexbox inside the header to span the entire width to allow more
@@ -86,14 +86,14 @@ gap: 2rem;
   column-gap: 2rem;
 }
 
-//Set the section element to be the outer grid container for the body of the page
-//This is used on the index.html page only
 .section-accordion {
   @include grid-main;
   gap: 1rem;
   grid-area: 2 / 3 / 10 / 12;
 }  
 
+//Set the section element to be the outer grid container for the body of the page
+//This is used on the index.html page only
 .section {
   @include grid-main;
   gap: 1rem;

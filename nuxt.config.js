@@ -47,19 +47,19 @@ export default {
     '@nuxtjs/axios'
   ],
 
-  module: {
-    rules: [
-      {
-        test: /\.s[ac]ss$/i,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
-      },
-    ],
-  },
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.s[ac]ss$/i,
+  //       use: ['style-loader', 'css-loader', 'sass-loader'],
+  //     },
+  //   ],
+  // },
 
-  bootstrapVue: {
-    bootstrapCSS: false,
-    icons: true,
-  },
+  // bootstrapVue: {
+  //   bootstrapCSS: false,
+  //   icons: true,
+  // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

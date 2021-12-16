@@ -18,7 +18,7 @@
           <li><nuxt-link to="/">The Beginning</nuxt-link></li>
           <li><nuxt-link to="/images">Images</nuxt-link></li>
           <li><nuxt-link to="/boot-grid">Boot-grid</nuxt-link></li>
-          <li><nuxt-link to="/accordian">Accordian</nuxt-link></li>
+          <li><nuxt-link to="/accordion">Accordion</nuxt-link></li>
           <li>
               <span data-toggle="tooltip" title="Not working yet">
                   <a class="nav-link disabled" href="#">More and more</a>
@@ -40,7 +40,6 @@
 </template>
 
 <script>
-  import axios from 'axios'
   import HeaderComponent from '~/components/HeaderComponent.vue'
 
   export default {
@@ -51,21 +50,7 @@
   
     data() {
       return {
-        loading: true,
-        //figure out the variable that will be used with the API
-        weather: null, 
-        errored: false
       }
-    },
-    mounted () {
-    axios
-      .get('https://api.weather.gov')
-      .then(response => (this.weather = response.data))
-      .catch(error => {
-        console.log(error)
-        this.errored = true
-      })
-      .finally(() => this.loading = false)
     }
   }
 </script>
@@ -78,5 +63,4 @@
 @import 'assets/scss/grid.font.mixins';
 @import 'assets/scss/components.content';
 </style>
-
 
