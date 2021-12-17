@@ -13,7 +13,7 @@ export default {
     ],
     link: [
       { rel: 'stylesheet', type: 'text/css', href: 'http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' },
-      { rel: 'stylesheet', href: 'css/style.css' }
+      // { rel: 'stylesheet', href: 'css/style.css' }
     ],
     script: [
       { src: "https://code.jquery.com/jquery-3.5.1.slim.min.js", integrity: "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj", crossorigin: "anonymous" },
@@ -22,12 +22,7 @@ export default {
   },
   
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    // CSS file in the project
-    '~/assets/scss/style.css',
-    // SCSS file in the project
-    '~/assets/scss/style.scss'
-  ],
+  css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [ 
@@ -38,28 +33,13 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-  ],
+  buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     'bootstrap-vue/nuxt',
     '@nuxtjs/axios'
   ],
-
-  // module: {
-  //   rules: [
-  //     {
-  //       test: /\.s[ac]ss$/i,
-  //       use: ['style-loader', 'css-loader', 'sass-loader'],
-  //     },
-  //   ],
-  // },
-
-  // bootstrapVue: {
-  //   bootstrapCSS: false,
-  //   icons: true,
-  // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

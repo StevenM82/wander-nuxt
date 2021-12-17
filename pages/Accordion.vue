@@ -23,53 +23,38 @@
             </div>
           </div>
       </div>
-      <sidebar-component />
 
-      <weather>
-        <label>Box 1
-          <input>
-        </label>
-      </weather>
-
+      <weather-component />
   </section>  
 </template>
 
 <script>
-import Weather from '~/components/Weather.vue'
-import SidebarComponent from '~/components/SidebarComponent.vue'
-import axios from 'axios'
+//this is my key from openweathermap.org
+
+//the 'WeatherComponent' import and component declaration are not needed because nuxt.config.js auto imports components
 
 export default {
     name: 'Accordion',
     layout: 'default',
+    //I added in 'components: {}' for ease of knowing what is included in the code without having to scan through it
+    //since it is auto imported by Nuxt
     components: {
-      Weather,
-      SidebarComponent
+      // WeatherComponent
     },
     data() {
       return {
-        //set the default value to true to make the initial state of the dropdown box collapsed
+        //set the default value to true to make the initial state of the accordion dropdown box collapsed
         isCollapsed: true,
         boxes: [
           {header: "Where we started", src: require("static/images/the-market.jpg"), text: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."},
           {header: "How it looked", src: require("static/images/original-interior.jpg"), text: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."},
           {header: "The quiet", src: require("static/images/tropical-forest.jpg"), text: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."},
         ],
-        loading: true,
-        weather: null,
-        errored: false
+      city: "",
+			current: {},
+			forecast: {}
       }
-    },
-    mounted () {
-      axios
-        .get('http://api.weatherapi.com/v1/current.json?{API-Key}')
-        .then(response => (this.weather = response.data))
-        .catch(error => {
-          console.log(error)
-          this.errored = true
-        })
-        .finally(() => this.loading = false)
-      }
+    }
   }
 </script>
 
