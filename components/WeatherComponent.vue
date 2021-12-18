@@ -1,43 +1,37 @@
 <template>
-	<label>City: 
-		<input>
-		<button type="submit" class="current" @click="$fetch">Current weather</button>
-		<button type="submit" class="forecast">Forecast</button>
-		
-		<!-- display the 'current.icon' after the user enters the city name -->
-      <p>
-        current.condition.icon<br>
-        current.condition.text<br>
-        temp: <br>
-        feels like:
-      </p>
-	</label>
+  <div>
+	  <label>City</label>
+	  <input type="text" />
+	  <button @click="$fetch">Refresh</button>
+    <p v-if="$fetchState.pending">Getting city forecast...</p>
+    <p v-else-if="$fetchState.error">An error occurred :(</p>
+    <div v-else>
+		<h1>Weather forecast for Yakima</h1>
+			<p>feels like: {{ forecast.current.feelslike_f }}</p>
+			<p>humidity: {{ forecast.humidity }}</p>
+			<p>pressure: {{ forecast.pressure }}</p>
+			<p>temperature: {{ forecast.temp }}</p>
+			<p>high: {{ forecast.temp_max }}</p>
+			<p>low: {{ forecast.temp_min }}</p>
+      
+    </div>
+  </div>
 </template>
+
 
 <script>
 	export default {
 		name: 'WeatherComponent',
 		data () {
 			return {
-				props: {
-					city: {
-						type: String,
-						required: true
-					},
-					region: {
-						type: String,
-						required: false
-					},
-				}
-
-			//take the information fetched from openweathermap.org and make it into an object with parts that can be specifically referenced
-			
+				city: "",
+				forecast: {},
 			}
 		},
 		async fetch() {
-			this.current = await fetch(
-				`https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={c89bea5b0ef714fc65e81d76def0188d}`
-			)
+			this.forecast = await fetch(
+				`http://api.weatherapi.com/v1/forecast.json?key=81ab5b4262e740d8b29233123211512&q=98908&days=10&aqi=no&alerts=no`
+			).then(res => res.json())
 		}
 	}
 </script>
