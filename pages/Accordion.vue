@@ -30,8 +30,6 @@
 </template>
 
 <script>
-//this is my key from openweathermap.org
-
 //the 'WeatherComponent' import and component declaration are not needed because nuxt.config.js auto imports components
 
 export default {
