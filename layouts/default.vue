@@ -18,7 +18,7 @@
           <li><nuxt-link to="/">The Beginning</nuxt-link></li>
           <li><nuxt-link to="/images">Images</nuxt-link></li>
           <li><nuxt-link to="/boot-grid">Boot-grid</nuxt-link></li>
-          <li><nuxt-link to="/accordion">Accordion</nuxt-link></li>
+          <li><nuxt-link to="/weather">Weather</nuxt-link></li>
           <li>
               <span data-toggle="tooltip" title="Not working yet">
                   <a class="nav-link disabled" href="#">More and more</a>

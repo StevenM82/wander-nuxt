@@ -86,7 +86,7 @@ gap: 2rem;
   column-gap: 2rem;
 }
 
-.section-accordion {
+.section-weather {
   @include grid-main;
   gap: 1rem;
   grid-area: 2 / 3 / 10 / 12;
