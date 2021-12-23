@@ -23,6 +23,17 @@
         layout: 'default',
         components: {
         },
+        head: {
+      title: {
+        meta:[
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Images description'
+          }
+        ],
+      }
+    },
         data() {
             // you have to place the image url inside require() to get it to show from the array 
             // otherwise it will just show the url and not load the image

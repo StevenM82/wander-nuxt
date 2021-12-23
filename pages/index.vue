@@ -32,6 +32,17 @@
       IndexComponent,
       SidebarComponent
     },
+    head: {
+      title: {
+        meta:[
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Index description'
+          }
+        ],
+      }
+    },
     data() {
       return {
         articles: [

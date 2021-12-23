@@ -10,6 +10,17 @@
 export default {
     name: 'Weather',
     layout: 'default',
+    head: {
+      title: {
+        meta:[
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Weather description'
+          }
+        ],
+      }
+    },
 
   data() {
     return {
@@ -17,10 +28,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-  .card:hover {
-    transition: .5s all ease-in-out;
-    box-shadow: 0 0 10px black;
-  }
-</style>

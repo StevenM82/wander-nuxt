@@ -51,18 +51,18 @@ export default {
 
 methods: {
     async getWeather() {
-      if (!this.city) {
-        return;
-      }
-      const res = await fetch(
-			`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=imperial&appid=f258ecbe7c0ac2838cf940844ddce6c0`
-      );
-      const { main, weather } = await res.json();
-      this.result = main;
-	  this.weather = weather[0].description;
-	  
-	  console.log(main);
-	  console.log(this.weather)
+		if (!this.city) {
+			return;
+		}
+		const res = await fetch(
+				`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=imperial&appid=f258ecbe7c0ac2838cf940844ddce6c0`
+		);
+		const { main, weather } = await res.json();
+		this.result = main;
+		this.weather = weather[0].description;
+		
+		console.log(main);
+		console.log(this.weather)
     },
   },
 }

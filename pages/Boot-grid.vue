@@ -30,6 +30,17 @@
   export default {
     name: 'Boot-grid',
     layout: 'default',
+    head: {
+      title: {
+        meta:[
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Boot-grid description'
+          }
+        ],
+      }
+    }
   }
 </script>
 
