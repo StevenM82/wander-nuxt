@@ -8,7 +8,7 @@
 		</div>
 
 		<div>
-			<!-- <p>description: {{ weather.description }}</p> -->
+			<!-- <p>description: {{ this.weather }}</p> -->
 			<p>temperature: {{ result.temp }}&deg;</p>
 			<p>feels like: {{ result.feels_like }}&deg;</p>
 			<p>high: {{ result.temp_max }}&deg;</p>
@@ -16,7 +16,6 @@
 		</div>
 	</div>
 </template>
-
 
 <script>	
 export default {
@@ -61,8 +60,9 @@ methods: {
       const { main, weather } = await res.json();
       this.result = main;
 	  this.weather = weather[0].description;
+	  
 	  console.log(main);
-	  console.log(weather[0].description);
+	  console.log(this.weather)
     },
   },
 }
