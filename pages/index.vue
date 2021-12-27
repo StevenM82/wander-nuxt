@@ -33,7 +33,7 @@
       SidebarComponent
     },
     head: {
-      title: {
+      title: 'Home',
         meta:[
           {
             hid: 'description',
@@ -41,7 +41,6 @@
             content: 'Index description'
           }
         ],
-      }
     },
     data() {
       return {
