@@ -9,8 +9,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { 
+        hid: 'The default page for the website', 
+        name: 'Wanderlust a la Carte', 
+        content: 'Van traveling both local and abroad' 
+      }
     ],
     link: [
       { rel: 'stylesheet', type: 'text/css', href: 'http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' },

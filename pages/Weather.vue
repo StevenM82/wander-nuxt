@@ -11,15 +11,14 @@ export default {
     name: 'Weather',
     layout: 'default',
     head: {
-      title: {
+      title: 'Current weather search',
         meta:[
           {
-            hid: 'description',
-            name: 'description',
-            content: 'Weather description'
+            hid: 'Current weather search page',
+            name: 'Weather',
+            content: 'The current weather for (almost) any city you plan on taking your van'
           }
         ],
-      }
     },
 
   data() {
