@@ -2,7 +2,7 @@ export default {
   target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    // title: 'Wanderlust a la Carte',
+    title: 'Checking the title',
     htmlAttrs: {
       lang: 'en'
     },
@@ -11,7 +11,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { 
         hid: 'The default page for the website', 
-        name: 'Check check', 
+        // name: 'Check check', 
         content: 'Van traveling both local and abroad', 
       }
     ],
