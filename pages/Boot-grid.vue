@@ -32,7 +32,7 @@
     layout: 'default',
 
     head: {
-      // title: 'Boot-grid',
+      title: 'Boot-grid',
       meta:[
         {
           hid: 'description',

@@ -33,7 +33,7 @@ export default {
     SidebarComponent
   },
   head: {
-    // title: 'Home',
+    title: 'Home',
     meta:[
       {
         hid: 'description',
