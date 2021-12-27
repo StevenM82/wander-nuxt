@@ -23,7 +23,7 @@ export default {
     layout: 'default',
     
     head: {
-        title: 'Places visited', 
+        title: 'Pictures of places visited', 
         meta:[
             {
             hid: 'description',
