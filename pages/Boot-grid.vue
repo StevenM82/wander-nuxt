@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <h1>{{ title }}</h1>
     <div class="row text-center">
       <h1 class="col-12 display-3">Wanderlust a la Carte</h1>
       <h2 class="col-12 display-4">Not lost, but finding</h2>
@@ -30,6 +31,12 @@
   export default {
     name: 'Boot-grid',
     layout: 'default',
+
+    data() {
+      return {
+        title: 'Boot-grid'
+      }
+    },
 
     head: {
       title: 'Boot-grid',
