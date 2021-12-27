@@ -37,7 +37,7 @@ export default {
     meta:[
       {
         hid: 'description',
-        name: 'description',
+        name: 'Home',
         content: 'Index description'
       }
     ],
