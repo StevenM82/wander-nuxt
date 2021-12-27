@@ -10,7 +10,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { 
-        hid: 'The default page for the website', 
+        hid: 'description', 
         name: 'description', 
         content: 'Van traveling both local and abroad', 
       }
