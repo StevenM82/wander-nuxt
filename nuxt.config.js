@@ -12,7 +12,8 @@ export default {
       { 
         hid: 'The default page for the website', 
         name: 'Wanderlust a la Carte', 
-        content: 'Van traveling both local and abroad' 
+        content: 'Van traveling both local and abroad', 
+        template: chunk => `${chunk} - My page`
       }
     ],
     link: [
