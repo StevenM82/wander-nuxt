@@ -18,39 +18,37 @@
 
 <script>
 
-    export default {
+export default {
+    name: 'Images',
+    layout: 'default',
+    
+    head: {
+    title: 'Images', 
+    meta:[
+        {
+        hid: 'description',
         name: 'Images',
-        layout: 'default',
-        components: {
-        },
-        head: {
-      title: {
-        meta:[
-          {
-            hid: 'description',
-            name: 'description',
-            content: 'Images description'
-          }
-        ],
-      }
-    },
-        data() {
-            // you have to place the image url inside require() to get it to show from the array 
-            // otherwise it will just show the url and not load the image
-            return {
-                images: [
-                    {name: 'camping', url: require('static/images/camping-wings-veggies.jpg'), alt: 'chicken wings and skewered veggies over a bbq grate'},
-                    {name: 'market', url: require('static/images/the-market.jpg')},
-                    {name: 'forest', url: require('static/images/tropical-forest.jpg')},
-                    {name: 'glacial', url: require('static/images/glacial-lake.jpg')},
-                    {name: 'festival', url: require('static/images/festival-2019.jpg')},
-                    {name: 'muertos', url: require('static/images/los-muertos.jpg')},
-                    {name: 'interior', url: require('static/images/original-interior.jpg')},
-                    {name: 'interior2', url: require('static/images/original-interior-2.jpg')},
-                    {name: 'floor', url: require('static/images/floor-removed.jpg')},
-                    {name: 'sliding-door', url: require('static/images/sliding-door-prep.jpg')},
-                ],
-            }
+        content: 'Images description'
+        }
+    ],
+},
+    data() {
+        // you have to place the image url inside require() to get it to show from the array 
+        // otherwise it will just show the url and not load the image
+        return {
+            images: [
+                {name: 'camping', url: require('static/images/camping-wings-veggies.jpg'), alt: 'chicken wings and skewered veggies over a bbq grate'},
+                {name: 'market', url: require('static/images/the-market.jpg')},
+                {name: 'forest', url: require('static/images/tropical-forest.jpg')},
+                {name: 'glacial', url: require('static/images/glacial-lake.jpg')},
+                {name: 'festival', url: require('static/images/festival-2019.jpg')},
+                {name: 'muertos', url: require('static/images/los-muertos.jpg')},
+                {name: 'interior', url: require('static/images/original-interior.jpg')},
+                {name: 'interior2', url: require('static/images/original-interior-2.jpg')},
+                {name: 'floor', url: require('static/images/floor-removed.jpg')},
+                {name: 'sliding-door', url: require('static/images/sliding-door-prep.jpg')},
+            ],
         }
     }
+}
 </script>

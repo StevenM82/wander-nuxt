@@ -22,35 +22,35 @@
 </template>
 
 <script>
-  import IndexComponent from '@/components/IndexComponent.vue'
-  import SidebarComponent from '@/components/SidebarComponent.vue'
+import IndexComponent from '@/components/IndexComponent.vue'
+import SidebarComponent from '@/components/SidebarComponent.vue'
 
-  export default {
-    name: 'Home',
-    layout: 'default',
-    components: {
-      IndexComponent,
-      SidebarComponent
-    },
-    head: {
-      title: 'Home',
-        meta:[
-          {
-            hid: 'description',
-            name: 'description',
-            content: 'Index description'
-          }
-        ],
-    },
-    data() {
-      return {
-        articles: [
-          {id: '1', text: 'A more thorough explanation of things will continue here. Always more to be written along the way'},
-          {id: '2', text: 'More information given if people make it this far down the page.'},
-          {id: '3', text: 'Here we are at the beginning. Things never go as you would hope, but along the way you find things you never could have hoped for.'},
-
-        ]
+export default {
+  name: 'Home',
+  layout: 'default',
+  components: {
+    IndexComponent,
+    SidebarComponent
+  },
+  head: {
+    title: 'Home',
+    meta:[
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Index description'
       }
+    ],
+  },
+  data() {
+    return {
+      articles: [
+        {id: '1', text: 'A more thorough explanation of things will continue here. Always more to be written along the way'},
+        {id: '2', text: 'More information given if people make it this far down the page.'},
+        {id: '3', text: 'Here we are at the beginning. Things never go as you would hope, but along the way you find things you never could have hoped for.'},
+
+      ]
     }
   }
+}
 </script>
