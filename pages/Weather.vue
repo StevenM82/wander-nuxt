@@ -11,7 +11,7 @@ export default {
   name: 'Weather',
   layout: 'default',
   head: {
-    title: 'Current weather search',
+    // title: 'Current weather search',
     meta:[
       {
         hid: 'Current weather search page',
