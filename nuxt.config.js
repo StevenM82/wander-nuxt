@@ -11,7 +11,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { 
         hid: 'The default page for the website', 
-        name: 'Default', 
+        name: 'Check check', 
         content: 'Van traveling both local and abroad', 
       }
     ],
