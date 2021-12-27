@@ -23,15 +23,15 @@ export default {
     layout: 'default',
     
     head: {
-    title: 'Images', 
-    meta:[
-        {
-        hid: 'description',
-        name: 'Images',
-        content: 'Images description'
-        }
-    ],
-},
+        title: 'Images', 
+        meta:[
+            {
+            hid: 'description',
+            name: 'Images',
+            content: 'Images description'
+            }
+        ],
+    },
     data() {
         // you have to place the image url inside require() to get it to show from the array 
         // otherwise it will just show the url and not load the image
