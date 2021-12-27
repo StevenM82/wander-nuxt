@@ -31,15 +31,15 @@
     name: 'Boot-grid',
     layout: 'default',
     head: {
-      title: {
+      title: 'Boot-grid',
         meta:[
           {
             hid: 'description',
-            name: 'description',
+            name: 'Boot-grid',
             content: 'Boot-grid description'
           }
         ],
-      }
+      
     }
   }
 </script>
