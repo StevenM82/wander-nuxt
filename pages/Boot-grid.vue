@@ -35,7 +35,7 @@
       title: 'Boot-grid of the beginning',
       meta:[
         {
-          hid: 'description',
+          hid: 'Learning about boot-grid',
           name: 'Boot-grid',
           content: 'Boot-grid description'
         }

@@ -36,9 +36,9 @@ export default {
     title: 'Home',
     meta:[
       {
-        hid: 'description',
+        hid: 'Home',
         name: 'Home',
-        content: 'Index description'
+        content: 'Where our project began'
       }
     ],
   },

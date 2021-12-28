@@ -26,14 +26,14 @@ export default {
         title: 'Pictures of places visited', 
         meta:[
             {
-            hid: 'description',
+            hid: 'A collection of images',
             name: 'Images',
-            content: 'Images description'
+            content: 'Images of places we have visited'
             }
         ],
     },
     data() {
-        // you have to place the image url inside require() to get it to show from the array 
+        // you have to place the image url inside 'require()' to get it to show from the array 
         // otherwise it will just show the url and not load the image
         return {
             images: [

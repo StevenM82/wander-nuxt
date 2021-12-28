@@ -11,12 +11,17 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { 
         hid: 'description', 
-        name: 'Wandering', 
+        name: 'description', 
         content: 'Van traveling both local and abroad', 
       }
     ],
     link: [
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Nothing+You+Could+Do' },
+      {
+        hid: 'canonical',
+        rel: 'canonical',
+        href: 'https://hopeful-hugle-a96024.netlify.app/'
+      }
     ],
     script: [
       { src: "https://code.jquery.com/jquery-3.5.1.slim.min.js", integrity: "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj", crossorigin: "anonymous" },
