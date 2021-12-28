@@ -28,7 +28,7 @@ export default {
             {
             hid: 'A collection of images',
             name: 'Images',
-            content: 'Images of places we have visited'
+            content: 'Images of places we have visited and the things that we have accomplished so far'
             }
         ],
         link: [

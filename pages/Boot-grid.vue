@@ -37,7 +37,7 @@
         {
           hid: 'Learning about boot-grid',
           name: 'Boot-grid',
-          content: 'Boot-grid description'
+          content: 'A page of practice using the built-in functions of bootstrap-vue'
         }
       ],
       link: [
