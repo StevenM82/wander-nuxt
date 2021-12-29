@@ -1,0 +1,3 @@
+- what you learned about SEO & analytics (1-2 paragraphs)
+
+The topics of SEO and analytics are extremely deep and diverse. They are terms that really help to understand what is going on behind the curtain, so to speak. Even just scratching the surface has shown me how much room there is for me to improve. Learning more about them has helped to remind me that though websites are generally built with the aim of generating traffic, that isn’t all of it. The human component is still the biggest factor. Focusing on the coding and configuration of a page/website can make it easy to forget that part. SEO is always changing and in order to stay relevant, you have to keep on your toes. 

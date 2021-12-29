@@ -33,7 +33,6 @@ export default {
         ],
         link: [
             {
-                //A canonical tag (aka "rel canonical") is a way of telling search engines that a specific URL represents the master copy of a page. 
                 hid: 'canonical',
                 rel: 'canonical',
                 href: 'https://hopeful-hugle-a96024.netlify.app/images'
