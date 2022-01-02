@@ -38,7 +38,7 @@ export default {
       {
         hid: 'Home',
         name: 'Home',
-        content: 'Where our project began with links to more articles about our van build experience, on larger screens'
+        content: 'Where our project began with links to more articles about our van build experience on larger screens'
       }
     ],
     link: [
