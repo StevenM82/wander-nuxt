@@ -14,7 +14,7 @@ export default {
         name: 'Wanderlust a la Carte', 
         content: 'Van traveling both local and abroad', 
       }
-    ],
+    ], 
     link: [
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Nothing+You+Could+Do' },
       {

@@ -1,15 +1,16 @@
 <template>
-<!-- set the header, nav and footer in this template for the entire website -->
+  <!-- set the header, nav and footer in this template for the entire website -->
   <div class="grid-container">
     <header class="header">
-      <header-component 
-        class="header-img" 
+      <header-component
+        class="header-img"
         :src="require('static/images/lopez-island.jpg')"
-        alt="A view looking out toward the water from a tree filled and rocky island">
+        alt="A view looking out toward the water from a tree filled and rocky island"
+      >
       </header-component>
       <div class="flex-heading">
-          <h1>Wanderlust a la Carte</h1>
-          <h2>Not lost, but finding</h2>
+        <h1>Wanderlust a la Carte</h1>
+        <h2>Not lost, but finding</h2>
       </div>
 
       <nav class="nav">
@@ -20,9 +21,9 @@
           <li><nuxt-link to="/boot-grid">Boot-grid</nuxt-link></li>
           <li><nuxt-link to="/weather">Weather</nuxt-link></li>
           <li>
-              <span data-toggle="tooltip" title="Not working yet">
-                  <a class="nav-link disabled" href="#">More and more</a>
-              </span>
+            <span data-toggle="tooltip" title="Not working yet">
+              <a class="nav-link disabled" href="#">More and more</a>
+            </span>
           </li>
         </ul>
       </nav>
@@ -40,19 +41,18 @@
 </template>
 
 <script>
-  import HeaderComponent from '~/components/HeaderComponent.vue'
+import HeaderComponent from '~/components/HeaderComponent.vue';
 
-  export default {
-    name: 'default',
-    components: {
-      HeaderComponent,
-    },
-  
-    data() {
-      return {
-      }
-    }
-  }
+export default {
+  name: 'default-layout',
+  components: {
+    HeaderComponent,
+  },
+
+  data() {
+    return {};
+  },
+};
 </script>
 
 <style lang="scss">
