@@ -10,11 +10,11 @@
       <a class="sidebar-a" href="#">Read more >></a>
     </article>
     <article>
-      <!-- <img
+      <img
         class="img-fluid"
         :src="require('static/images/windowless-sliding-door.jpg')"
         alt="A van sliding door with a large section cut out for a window"
-      /> -->
+      />
       <p class="sidebar-p">You can see right through the door...</p>
       <a class="sidebar-a" href="#">Read more >></a>
     </article>
