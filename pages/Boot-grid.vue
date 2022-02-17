@@ -1,5 +1,9 @@
 <template>
   <div class="container">
+    <div class="row text-center">
+      <h1 class="col-12 display-3">Wanderlust a la Carte</h1>
+      <h2 class="col-12 display-4">Not lost, but finding</h2>
+    </div>
 
     <!-- the outer two columns adjust automatically, regardless of screen size. the image is made responsive via img-fluid -->
     <div class="row mt-1">
