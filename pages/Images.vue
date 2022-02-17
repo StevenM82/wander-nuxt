@@ -2,7 +2,11 @@
   <ul class="section-images">
     <!-- setting the :src="image.url" is required to bind source, aka src=, to the url of the image 
         using img-fluid automatically sets the image dimensions to fill a single grid square when using CSS Grid -->
-    <li v-for="image in images" :key="image.name" :name="image.name">
+    <li 
+      v-for="image in images" 
+      :key="image.name" 
+      :name="image.name"
+      >
       <image-component v-bind="image" class="img-fluid" :src="image.url" />
     </li>
   </ul>
