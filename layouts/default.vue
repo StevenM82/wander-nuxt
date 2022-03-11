@@ -32,7 +32,7 @@
 
     <footer class="footer">
       <ul class="footer-nav">
-        <li><a href="#">The Beginning</a></li>
+        <li><nuxt-link to="/">The Beginning</nuxt-link></li>
         <li><a href="#">So far, so good</a></li>
         <li><a href="#">Mistakes and Advice</a></li>
       </ul>
