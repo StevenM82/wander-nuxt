@@ -19,16 +19,6 @@
         <p>
           {{ article.text }}
         </p>
-        <p>
-          If we have learned one thing from our adventures, it's this. Make time
-          for adventures when and wherever you can. Things <i>WILL</i> go
-          sideways. You have to be ready for it, but don't let planning stop you
-          from doing.
-        </p>
-        <p>
-          They say that there is more to see in the world than could ever be
-          experienced in a lifetime.
-        </p>
       </article>
     </section>
     <sidebar-component />
@@ -62,11 +52,11 @@ export default {
       articles: [
         {
           id: '1',
-          text: 'A more thorough explanation of things will continue here. Always more to be written along the way',
+          text: 'If we have learned one thing from our adventures, it`s this. Make time for adventures when and wherever you can. Things <i>WILL</i> go sideways. You have to be ready for it, but don`t let planning stop you from doing.',
         },
         {
           id: '2',
-          text: 'More information given if people make it this far down the page.',
+          text: 'They say that there is more to see in the world than could ever be experienced in a lifetime.',
         },
         {
           id: '3',
