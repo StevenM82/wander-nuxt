@@ -6,8 +6,7 @@
         class="header-img"
         :src="require('static/images/lopez-island.jpg')"
         alt="A view looking out toward the water from a tree filled and rocky island"
-      >
-      </header-component>
+      />
       <div class="flex-heading">
         <h1>Wanderlust a la Carte</h1>
         <h2>Not lost, but finding</h2>
