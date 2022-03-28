@@ -5,7 +5,7 @@
 }
 
 //Set the main grid container for the page leaving the rows implicit
-//This container will end up having a header, body and footer grid inside of it
+//This is the primary container for the entire page
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -98,11 +98,6 @@
   @include grid-main;
   grid-area: 1 / 2 / 10 / 8;
 
-  //make the articles appear more centered on smaller screens
-  @include media-query('mobile') {
-    grid-area: 2 / 1 / 10 / 2;
-  }
-
   //allow the grid to place the as many articles that span 3 columns on one row as
   //fit on the screen
   .article {
@@ -115,10 +110,6 @@
   @include sidebar;
   grid-column: 1 / 2;
 
-  //make the sidebar disappear when the screen gets too small
-  @include media-query('mobile') {
-    display: none;
-  }
   .sidebar-p {
     margin: 0;
   }
@@ -213,5 +204,27 @@
     text-decoration: none;
     color: white;
     padding: 0 2rem;
+  }
+}
+/*-------------------------------------
+Grid layouts
+-------------------------------------*/
+@supports (grid-area: auto) {
+  @include media-query('small') {
+  }
+  @include media-query('mobile') {
+    //make the articles appear more centered on smaller screens
+    .section {
+      grid-area: 2 / 1 / 10 / 2;
+    }
+
+    //make the sidebar disappear when the screen gets too small
+    .left-sidebar {
+      display: none;
+    }
+  }
+  @include media-query('ipad') {
+  }
+  @include media-query('desk') {
   }
 }
