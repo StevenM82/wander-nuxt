@@ -4,15 +4,12 @@
   list-style: none;
 }
 
-//Set the main grid container for the page leaving the rows implicit
 //This is the primary container for the entire page
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 2rem;
 
-  //Set a header grid that only covers one row of the page grid container, but
-  //spans the entire width of the page
   .header {
     display: grid;
     grid-area: 1 / 1 / 2 / span 12;
@@ -114,8 +111,6 @@
       grid-area: 1 / 2 / 10 / 8;
     }
 
-    //allow the grid to place the as many articles that span 3 columns on one row as
-    //fit on the screen
     .article {
       grid-column: span 4;
     }
@@ -253,18 +248,5 @@
     text-decoration: none;
     color: white;
     padding: 0 2rem;
-  }
-}
-/*-------------------------------------
-Grid layouts
--------------------------------------*/
-@supports (grid-area: auto) {
-  @include media-query('small') {
-  }
-  @include media-query('mobile') {
-  }
-  @include media-query('ipad') {
-  }
-  @include media-query('desk') {
   }
 }

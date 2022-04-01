@@ -57,11 +57,11 @@ export default {
   layout: 'default',
 
   head: {
-    title: 'Boot-grid of the beginning',
+    title: 'Van progress so far',
     meta: [
       {
-        hid: 'Learning about boot-grid',
-        name: 'Boot-grid',
+        hid: 'How the work is going',
+        name: 'VanProgress',
         content:
           'A page of practice using the built-in functions of bootstrap-vue',
       },
@@ -70,7 +70,7 @@ export default {
       {
         hid: 'canonical',
         rel: 'canonical',
-        href: 'https://hopeful-hugle-a96024.netlify.app/boot-grid',
+        href: 'https://hopeful-hugle-a96024.netlify.app/VanProgress',
       },
     ],
   },
