@@ -60,8 +60,6 @@
         font-size: 1.25rem;
       }
     }
-    //Hover transition:
-    //https://codepen.io/dig-lopes/pen/WLVGda?editors=1100
     a {
       color: $white;
       text-decoration: none;
@@ -83,11 +81,14 @@
 @supports (grid-area: auto) {
   .main-body {
     @include media-query('small') {
-      grid-template-columns: 1fr;
+      display: grid;
+      grid-area: 2 / 2 / 10 / 12;
+      grid-template-columns: 1fr 1fr 1fr;
     }
-    @include grid-main;
-    grid-area: 2 / 2 / 10 / 12;
-    column-gap: 2rem;
+    @include media-query('tab') {
+      grid-template-columns: repeat(7, 1fr);
+      column-gap: 2rem;
+    }
   }
 
   .section-weather {
@@ -97,17 +98,20 @@
   }
 
   /*-------------------------------------
-  This breaks from 621px to 767px
+  Index page
   --------------------------------------*/
-  //This is used on the index.html page only
 
   .section {
-    @include grid-main;
-    grid-area: 1 / 2 / 10 / 8;
-
     //make the articles appear more centered on smaller screens
     @include media-query('mobile') {
       grid-column: 1 / -1;
+    }
+    @include media-query('tab') {
+      grid-column: 2 / -1;
+    }
+    @include media-query('lg') {
+      @include grid-main;
+      grid-area: 1 / 2 / 10 / 8;
     }
 
     //allow the grid to place the as many articles that span 3 columns on one row as

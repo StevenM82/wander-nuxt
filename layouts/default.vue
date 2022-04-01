@@ -40,25 +40,11 @@
 </template>
 
 <script>
-import HeaderComponent from '~/components/HeaderComponent.vue';
-
 export default {
   name: 'default-layout',
-  components: {
-    HeaderComponent,
-  },
 
   data() {
     return {};
   },
 };
 </script>
-
-<style lang="scss">
-// import all of the scss partials globally into the website
-@import 'assets/scss/normalize';
-@import 'assets/scss/settings.variables';
-@import 'assets/scss/settings.responsive';
-@import 'assets/scss/grid.font.mixins';
-@import 'assets/scss/components.content';
-</style>
