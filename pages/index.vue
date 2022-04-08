@@ -15,7 +15,7 @@
           we get farther from it.
         </p>
       </article>
-      <article class="article" v-for="article in articles" :key="article.id">
+      <article v-for="article in articles" :key="article.id" class="article">
         <p>
           {{ article.text }}
         </p>
@@ -29,6 +29,25 @@
 export default {
   name: 'Home-page',
   layout: 'default',
+  data() {
+    return {
+      articles: [
+        {
+          id: '1',
+          text: 'If we have learned one thing from our adventures, it`s this. Make time for adventures when and wherever you can. Things WILL go sideways. You have to be ready for it, but don`t let planning stop you from doing.',
+        },
+        {
+          id: '2',
+          text: 'They say that there is more to see in the world than could ever be experienced in a lifetime.',
+        },
+        {
+          id: '3',
+          text: 'Here we are at the beginning. Things never go as you would hope, but along the way you find things you never could have hoped for.',
+        },
+      ],
+    };
+  },
+
   head: {
     title: 'Home',
     meta: [
@@ -46,24 +65,6 @@ export default {
         href: 'https://hopeful-hugle-a96024.netlify.app/',
       },
     ],
-  },
-  data() {
-    return {
-      articles: [
-        {
-          id: '1',
-          text: 'If we have learned one thing from our adventures, it`s this. Make time for adventures when and wherever you can. Things <i>WILL</i> go sideways. You have to be ready for it, but don`t let planning stop you from doing.',
-        },
-        {
-          id: '2',
-          text: 'They say that there is more to see in the world than could ever be experienced in a lifetime.',
-        },
-        {
-          id: '3',
-          text: 'Here we are at the beginning. Things never go as you would hope, but along the way you find things you never could have hoped for.',
-        },
-      ],
-    };
   },
 };
 </script>
