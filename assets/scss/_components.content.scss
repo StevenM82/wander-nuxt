@@ -10,7 +10,10 @@
   .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 2rem;
+    gap: 1rem;
+    @include media-query('mobile') {
+      gap: 1;
+    }
 
     .header {
       display: grid;
@@ -63,7 +66,8 @@
         padding: 0 2rem;
         transition: 0.5s all ease-in-out;
       }
-      a:hover a:focus {
+      a:hover,
+      a:focus {
         @include media-query('small') {
           color: $neon-yellow;
         }
@@ -143,7 +147,6 @@
         display: grid;
         grid-row: 2 / 10;
         grid-column: 1 / -1;
-        grid-template-columns: 1fr;
 
         li:nth-child(n) {
           grid-column: span 1;

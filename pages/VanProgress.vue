@@ -53,7 +53,7 @@
 
 <script>
 export default {
-  name: 'Boot-grid',
+  name: 'VanProgress',
   layout: 'default',
 
   head: {

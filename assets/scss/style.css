@@ -349,13 +349,18 @@ template {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 2rem;
+    gap: 1rem;
     /*-------------------------------------
     Index page
     --------------------------------------*/
     /*-------------------------------------
     Images page
     -------------------------------------*/
+  }
+  @media screen and (max-width: 767px) {
+    .grid-container {
+      gap: 1;
+    }
   }
   .grid-container .header {
     display: grid;
@@ -416,12 +421,14 @@ template {
     transition: 0.5s all ease-in-out;
   }
   @media screen and (min-width: 20em) {
-    .grid-container .nav a:hover a:focus {
+    .grid-container .nav a:hover,
+.grid-container .nav a:focus {
       color: #ffee10;
     }
   }
   @media screen and (min-width: 540px) {
-    .grid-container .nav a:hover a:focus {
+    .grid-container .nav a:hover,
+.grid-container .nav a:focus {
       box-shadow: 0 0 5px #ffee10;
       text-shadow: 0 0 5px #ffee10;
       background-color: #3f3f3f;
@@ -494,7 +501,6 @@ template {
       display: grid;
       grid-row: 2/10;
       grid-column: 1/-1;
-      grid-template-columns: 1fr;
     }
     .grid-container .section-images li:nth-child(n) {
       grid-column: span 1;
