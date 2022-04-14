@@ -357,11 +357,6 @@ template {
     Images page
     -------------------------------------*/
   }
-  @media screen and (max-width: 767px) {
-    .grid-container {
-      gap: 1;
-    }
-  }
   .grid-container .header {
     display: grid;
     grid-area: 1/1/2/span 12;
@@ -405,13 +400,12 @@ template {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    gap: 1rem;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 768px) {
     .grid-container .nav .nav-list {
-      gap: 1rem;
-      padding: 0.5rem 0;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
     }
   }
   .grid-container .nav a {
@@ -420,11 +414,9 @@ template {
     padding: 0 2rem;
     transition: 0.5s all ease-in-out;
   }
-  @media screen and (min-width: 20em) {
-    .grid-container .nav a:hover,
+  .grid-container .nav a:hover,
 .grid-container .nav a:focus {
-      color: #ffee10;
-    }
+    color: #ffee10;
   }
   @media screen and (min-width: 540px) {
     .grid-container .nav a:hover,
@@ -436,12 +428,9 @@ template {
       font-size: 2rem;
     }
   }
-  @media screen and (min-width: 20em) {
-    .grid-container .main-body {
-      display: grid;
-      grid-area: 2/2/10/12;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
+  .grid-container .main-body {
+    display: grid;
+    grid-area: 2/2/10/12;
   }
   @media screen and (min-width: 768px) {
     .grid-container .main-body {
@@ -456,10 +445,8 @@ template {
     gap: 1rem;
     grid-area: 2/3/10/12;
   }
-  @media screen and (max-width: 767px) {
-    .grid-container .section {
-      grid-column: 1/-1;
-    }
+  .grid-container .section {
+    grid-column: 1/-1;
   }
   @media screen and (min-width: 768px) {
     .grid-container .section {
@@ -496,16 +483,14 @@ template {
   .grid-container .left-sidebar .sidebar-a {
     text-decoration: none;
   }
-  @media screen and (min-width: 20em) {
-    .grid-container .section-images {
-      display: grid;
-      grid-row: 2/10;
-      grid-column: 1/-1;
-    }
-    .grid-container .section-images li:nth-child(n) {
-      grid-column: span 1;
-      grid-row: span 1;
-    }
+  .grid-container .section-images {
+    display: grid;
+    grid-row: 2/10;
+    grid-column: 1/-1;
+  }
+  .grid-container .section-images li:nth-child(n) {
+    grid-column: span 1;
+    grid-row: span 1;
   }
   @media screen and (min-width: 540px) {
     .grid-container .section-images {
@@ -570,9 +555,6 @@ template {
       grid-row: span 2;
     }
   }
-  .grid-container .card:hover {
-    box-shadow: 0 0 10px black;
-  }
   .grid-container .footer {
     --auto-grid-min-size: 16rem;
     display: grid;
@@ -589,12 +571,7 @@ template {
     flex-wrap: wrap;
     grid-area: 1/1/12/span 12;
     justify-content: space-evenly;
-  }
-  @media screen and (max-width: 767px) {
-    .grid-container .footer .footer-nav {
-      gap: 1rem;
-      align-content: center;
-    }
+    gap: 1rem;
   }
   .grid-container .footer a {
     text-decoration: none;

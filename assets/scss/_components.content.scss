@@ -11,9 +11,6 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1rem;
-    @include media-query('mobile') {
-      gap: 1;
-    }
 
     .header {
       display: grid;
@@ -52,12 +49,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+        gap: 1rem;
 
-        @include media-query('mobile') {
-          gap: 1rem;
-          padding: 0.5rem 0;
-          font-size: 1.25rem;
+        @include media-query('tab') {
+          font-size: 1.5rem;
         }
       }
       a {
@@ -68,9 +64,7 @@
       }
       a:hover,
       a:focus {
-        @include media-query('small') {
-          color: $neon-yellow;
-        }
+        color: $neon-yellow;
 
         @include media-query('infograph') {
           box-shadow: 0 0 5px $neon-yellow;
@@ -81,19 +75,15 @@
         }
       }
     }
-
     .main-body {
-      @include media-query('small') {
-        display: grid;
-        grid-area: 2 / 2 / 10 / 12;
-        grid-template-columns: 1fr 1fr 1fr;
-      }
+      display: grid;
+      grid-area: 2 / 2 / 10 / 12;
+
       @include media-query('tab') {
         grid-template-columns: repeat(7, 1fr);
         column-gap: 2rem;
       }
     }
-
     .section-weather {
       @include grid-main;
       gap: 1rem;
@@ -106,12 +96,12 @@
 
     .section {
       //make the articles appear more centered on smaller screens
-      @include media-query('mobile') {
-        grid-column: 1 / -1;
-      }
+      grid-column: 1 / -1;
+
       @include media-query('tab') {
         grid-column: 2 / -1;
       }
+
       @include media-query('lg') {
         @include grid-main;
         grid-area: 1 / 2 / 10 / 8;
@@ -143,15 +133,13 @@
   Images page
   -------------------------------------*/
     .section-images {
-      @include media-query('small') {
-        display: grid;
-        grid-row: 2 / 10;
-        grid-column: 1 / -1;
+      display: grid;
+      grid-row: 2 / 10;
+      grid-column: 1 / -1;
 
-        li:nth-child(n) {
-          grid-column: span 1;
-          grid-row: span 1;
-        }
+      li:nth-child(n) {
+        grid-column: span 1;
+        grid-row: span 1;
       }
 
       @include media-query('infograph') {
@@ -217,11 +205,6 @@
       }
     }
 
-    //Set a black box-shadow around the card on hover
-    .card:hover {
-      box-shadow: 0 0 10px black;
-    }
-
     //create a grid to hold all of the footer components
     .footer {
       @include grid-main;
@@ -234,18 +217,12 @@
       .footer-img {
         grid-area: 1 / 1 / 12 / span 12;
       }
-
       .footer-nav {
         display: flex;
         flex-wrap: wrap;
         grid-area: 1 / 1 / 12 / span 12;
         justify-content: space-evenly;
-
-        //stack the nav in a column instead of a row on smaller screens for readability
-        @include media-query('mobile') {
-          gap: 1rem;
-          align-content: center;
-        }
+        gap: 1rem;
       }
       a {
         text-decoration: none;
