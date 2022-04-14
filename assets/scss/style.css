@@ -414,13 +414,11 @@ template {
     padding: 0 2rem;
     transition: 0.5s all ease-in-out;
   }
-  .grid-container .nav a:hover,
-.grid-container .nav a:focus {
+  .grid-container .nav a:hover {
     color: #ffee10;
   }
   @media screen and (min-width: 540px) {
-    .grid-container .nav a:hover,
-.grid-container .nav a:focus {
+    .grid-container .nav a:hover {
       box-shadow: 0 0 5px #ffee10;
       text-shadow: 0 0 5px #ffee10;
       background-color: #3f3f3f;
@@ -487,6 +485,8 @@ template {
     display: grid;
     grid-row: 2/10;
     grid-column: 1/-1;
+    padding: 0;
+    margin: 0;
   }
   .grid-container .section-images li:nth-child(n) {
     grid-column: span 1;
