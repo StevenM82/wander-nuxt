@@ -2,11 +2,23 @@
   <div class="main-body">
     <section class="section">
       <article class="article">
-        <img
-          class="img-fluid"
-          :src="require('static/images/glacial-lake.jpg')"
-          alt="a calm glacial lake"
-        />
+        <picture>
+          <source
+            :srcset="require('static/images/glacial-lake.webp')"
+            type="image/webp"
+            alt="a calm glacial lake"
+          />
+          <source
+            :srcset="require('static/images/glacial-lake.jpg')"
+            type="image/jpeg"
+            alt="a calm glacial lake"
+          />
+          <img
+            class="img-fluid"
+            :src="require('static/images/glacial-lake.jpg')"
+            alt="a calm glacial lake"
+          />
+        </picture>
         <p class="lead">
           We are a couple of travelers that have taken the time and put in the
           work to allow us see the world. On our first adventure we traveled by

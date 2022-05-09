@@ -4,7 +4,7 @@
     <header class="header">
       <header-component
         class="header-img"
-        :src="require('static/images/lopez-island.jpg')"
+        :src="require('static/images/lopez-island.webp')"
         alt="A view looking out toward the water from a tree filled and rocky island"
       />
       <div class="flex-heading">
