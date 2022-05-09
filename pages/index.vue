@@ -4,11 +4,13 @@
       <article class="article">
         <picture>
           <source
+            class="img-fluid"
             :srcset="require('static/images/glacial-lake.webp')"
             type="image/webp"
             alt="a calm glacial lake"
           />
           <source
+            class="img-fluid"
             :srcset="require('static/images/glacial-lake.jpg')"
             type="image/jpeg"
             alt="a calm glacial lake"
