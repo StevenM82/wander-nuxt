@@ -17,7 +17,7 @@
           <!-- <nuxt-link> acts like an <a> with the correct href -->
           <li><nuxt-link to="/">The Beginning</nuxt-link></li>
           <li><nuxt-link to="/images">Images</nuxt-link></li>
-          <li><nuxt-link to="/VanProgress">So far, so good</nuxt-link></li>
+          <li><nuxt-link to="/VanProgress">Progress</nuxt-link></li>
           <li><nuxt-link to="/weather">Weather</nuxt-link></li>
           <li>
             <span data-toggle="tooltip" title="Not working yet">
@@ -32,7 +32,7 @@
     <footer class="footer">
       <ul class="footer-nav">
         <li><nuxt-link to="/">The Beginning</nuxt-link></li>
-        <li><nuxt-link to="/VanProgress">So far, so good</nuxt-link></li>
+        <li><nuxt-link to="/VanProgress">Progress</nuxt-link></li>
         <li><a href="#">Mistakes and Advice</a></li>
       </ul>
     </footer>
@@ -41,7 +41,7 @@
 
 <script>
 export default {
-  name: 'default-layout',
+  name: 'DefaultLayout',
 
   data() {
     return {};
